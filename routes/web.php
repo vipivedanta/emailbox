@@ -11,6 +11,12 @@
 |
 */
 
+use Illuminate\Support\Facades\Artisan;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('emails','EmailController');
+Route::post('filter-emails','EmailController@setFilter');
+Route::get('reset-filter-emails','EmailController@resetFilters');
