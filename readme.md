@@ -21,9 +21,9 @@ command - php artisan email:sync
 
 Installtion
 --------------
-git clone https://github.com/vipivedanta/emailbox.git emailbox
-cd emailbox
-update Mysql database credentials in .env
-composer install
-php artisan migrate
-php artisan email:sync <- this has to be called in intervals or set to Laravel scheduler
+1. git clone https://github.com/vipivedanta/emailbox.git emailbox
+2. cd emailbox
+3. update Mysql database credentials in .env
+4. composer install
+5. php artisan migrate
+6. php artisan email:sync <- this has to be called in intervals or set to Laravel scheduler
